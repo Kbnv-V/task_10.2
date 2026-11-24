@@ -1,16 +1,23 @@
 #ifndef TRIANGLE_H
 #define TRIANGLE_H
 
-#include "TriangleShapeTemplate.h"
-
-class Triangle : public TriangleShapeTemplate //произвольный треугольник
+class Triangle //произвольный треугольник
 {
-private:
-    void PrintNameFigure() override;
+protected:
+    int sideA{}; //значения сторон
+    int sideB{};
+    int sideC{};
+
+    int cornerA{}; //значения углов
+    int cornerB{};
+    int cornerC{};
+
+    virtual void PrintNameFigure();
 
 public:
     Triangle() = default;
     Triangle(int sda, int sdb, int sdc, int crna, int crnb, int crnc);
+    void PrintInfo();
 };
 
 #endif
