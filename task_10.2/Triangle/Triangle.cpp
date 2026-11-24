@@ -10,12 +10,11 @@ cornerA(crna),
 cornerB(crnb),
 cornerC(crnc)
 {
-    PrintInfo();
 }
 
 void Triangle::PrintNameFigure()
 {
-    std::cout << "Треугольник ";
+    std::cout << "Треугольник:" << std::endl;
 }
 
 void Triangle::PrintInfo()

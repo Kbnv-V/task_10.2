@@ -20,7 +20,7 @@ int main()
     try
     {
         Triangle t(10, 20, 30, 60, 50, 60);
-        RightTriangle rt(10, 20, 30, 40, 60, 80);
+        RightTriangle rt(10, 20, 30, 40, 60, 90);
         IsoscelesTriangle it(10, 20, 10, 50, 60, 50);
         EquilateralTriangle et(30, 30, 30, 60, 60, 60);
 
@@ -50,14 +50,8 @@ int main()
         p.PrintInfo();
         rh.PrintInfo();
     }
-    catch (ShapeException& exp)
-    {
-        std::cerr << "Читаем ошибку в catch (type ShapeException)" << std::endl;
-        std::cerr << exp.what() << std::endl;
-    }
     catch (std::exception& exp)
     {
-        std::cerr << "Читаем ошибку в catch (type Exception)" << std::endl;
         std::cerr << exp.what() << std::endl;
     }
     catch (...)
