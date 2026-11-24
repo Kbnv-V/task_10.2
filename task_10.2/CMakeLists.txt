@@ -3,7 +3,7 @@
 #
 
 # Добавьте источник в исполняемый файл этого проекта.
-add_executable (task_10.2 "task_10.2.cpp" "task_10.2.h")
+add_executable (task_10.2 "task_10.2.cpp" )
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET task_10.2 PROPERTY CXX_STANDARD 20)

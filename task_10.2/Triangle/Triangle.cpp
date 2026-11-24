@@ -24,3 +24,11 @@ void Triangle::PrintNameFigure()
 {
     std::cout << "Треугольник ";
 }
+
+void Triangle::PrintInfo()
+{
+    PrintNameFigure();
+    std::cout << "Стороны: " << "a = " << sideA << " b = " << sideB << " c = " << sideC << std::endl;
+    std::cout << "Углы: " << "А = " << cornerA << " b = " << cornerB << " C = " << cornerC << std::endl;
+    std::cout << std::endl;
+}
